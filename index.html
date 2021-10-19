@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aproveite fazer o cadastro para abrir nova conta"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="titulo">Cadastre-se nova conta!</div>
+      <form accept="#">
+        <div class="formulario-usuario">
+          <!-- NOME -->
+          <div class="campo">
+            <span class="sub-titulo">Nome completo*</span>
+            <input
+              type="text"
+              name="nome"
+              placeholder="Digite seu nome"
+              required
+            />
+          </div>
+
+          <!-- SEXO -->
+          <div class="campo">
+            <span class="sub-titulo" for="Sexo">Sexo</span>
+            <select>
+              <option selected disabled value="Selecione">Selecione</option>
+              <option class="campo-genero" value="feminino">F</option>
+              <option class="campo-genero" value="masculino">M</option>
+            </select>
+          </div>
+
+          <!-- CPF -->
+          <div class="campo">
+            <span class="sub-titulo">CPF*</span>
+            <input
+              type="text"
+              name="cpf"
+              placeholder="Digite seu CPF"
+              required
+            />
+          </div>
+
+          <!-- RG -->
+          <div class="campo">
+            <span class="sub-titulo">RG</span>
+            <input type="text" name="rg" placeholder="Digite seu RG" />
+          </div>
+
+          <!-- CEP -->
+          <div class="campo">
+            <span class="sub-titulo">CEP</span>
+            <input
+              type="text"
+              name="cep"
+              pattern="\d{5}-?\d{3}"
+              placeholder="XXXXX-XXX"
+            />
+          </div>
+
+          <!-- ENDEREÇO -->
+          <div class="campo">
+            <span class="sub-titulo">Endereço*</span>
+            <input
+              type="text"
+              name="endereco"
+              placeholder="Digite seu endereço"
+              required
+            />
+          </div>
+
+          <!-- NÚMERO -->
+          <div class="campo">
+            <span class="sub-titulo">Número*</span>
+            <input
+              type="text"
+              name="numero"
+              placeholder="Digite seu número"
+              required
+            />
+          </div>
+
+          <!-- CIDADE -->
+          <div class="campo">
+            <span class="sub-titulo">Cidade</span>
+            <input type="text" name="cidade" placeholder="Digite sua cidade" />
+          </div>
+
+          <!-- ESTADO -->
+          <div class="campo">
+            <span class="sub-titulo">Estado</span>
+            <select name="estado">
+              <option selected disabled value="selecione">Selecione</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
+          </div>
+
+          <!-- CELULAR -->
+          <div class="campo">
+            <span class="sub-titulo">Celular*</span>
+            <input
+              type="text"
+              name="celular"
+              placeholder="(DD) XXXX-XXXX"
+              required
+            />
+          </div>
+
+          <!-- TELEFONE FIXO -->
+          <div class="campo">
+            <span class="sub-titulo">Telefone fixo</span>
+            <input type="text" name="celular" placeholder="(DD) XXXX-XXXX" />
+          </div>
+        </div>
+
+        <div class="botao">
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+      <span><strong>*</strong> é obrigatório</span>
+    </main>
+    <footer>
+      <p><strong>Nicole Ferreira</strong></p>
+      <p>Programa de Formação Itaú Tech - 5° Edição</p>
+      <p>Gama Acamdey</p>
+    </footer>
+  </body>
+</html>

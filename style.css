@@ -1,0 +1,134 @@
+/* 
+    GLOBALMENTE
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+/* 
+    TODO O CORPO
+*/
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  background: #303952;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+
+/* 
+    TITÍULO
+*/
+
+main .titulo {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+main form .formulario-usuario {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .formulario-usuario .campo {
+  margin-bottom: 30px;
+}
+
+.formulario-usuario .campo .sub-titulo {
+  display: block;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.formulario-usuario .campo input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.formulario-usuario .campo select {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+form .botao {
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .botao input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: #303952;
+}
+
+/* 
+  FOOTER
+*/
+
+footer {
+  width: 100%;
+  height: 20vh;
+  margin-top: 4rem;
+  background: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  line-height: 40px;
+}
+
+/* 
+    MOBILE
+*/
+
+@media (max-width: 700px) {
+  main {
+    max-width: 85%;
+  }
+
+  form .formulario-usuario .campo {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
