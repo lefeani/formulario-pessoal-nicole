@@ -82,7 +82,7 @@ form .formulario-usuario .campo {
 
 form .botao {
   height: 45px;
-  margin: 45px 0;
+  margin: 15px 0;
 }
 
 form .botao input {
@@ -116,6 +116,23 @@ footer {
 
 footer p {
   line-height: 40px;
+}
+
+.container {
+  padding: 20px 0;
+}
+
+.caixa-alerta span {
+  display: block;
+  padding: 4px 0;
+}
+
+.caixa-alerta .sucesso {
+  background: #26ec20;
+}
+
+.caixa-alerta .erro {
+  background: #f33737;
 }
 
 /* 
