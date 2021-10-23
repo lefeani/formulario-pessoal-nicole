@@ -68,8 +68,9 @@ var resultadoValidacao = validaCPF(valcpf);
 }
 ```
  
-- Variáveis criadas que tem: `nome`, `endereco`, `numero` e `celular` são usados pelo `id` em HTML e estão no if caso no tiver o valor e informa a mensagem "não é informado". E tem o alerto que informa "O cadastro enviado".
-```
+- Variáveis criadas que tem: `nome`, `endereco`, `numero` e `celular` são usados pelo `id` em HTML e estão no if caso não tiver o valor e informa a mensagem "não é informado". E tem o `alert` que informa "O cadastro enviado".
+
+```js
 const nome = document.getElementById("nome");
 const endereco = document.getElementById("endereco");
 const numero = document.getElementById("numero");
