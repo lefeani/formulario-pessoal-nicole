@@ -20,9 +20,20 @@ O formulário de cadastro foi criado em HTML, CSS e uso de JavaScript para valid
 ### Descrição do site:
 
 ## HTML
-Uso <tag> `form` para criar o formulário e aprugar os elementos usados HTML entre:
-- div
-- span
-- input
-- select
-- option
+Uso <tag> `form` para criar o formulário e agrupar os elementos usados HTML entre:
+- `div`
+- `span`
+- `input`
+- `select`
+- `option`
+
+## CSS
+As classes de alguns elementos são customizados entre:
+- `.titulo`
+- `.sub-titulo`
+- `.formulario-usuario`
+- `.campo`
+- `.controle`
+- `.botao`
+- `.sucesso` & .erro`
+
