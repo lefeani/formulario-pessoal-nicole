@@ -26,14 +26,29 @@ Uso <tag> `form` para criar o formulário e agrupar os elementos usados HTML ent
 - `input`
 - `select`
 - `option`
+'''html
+
+```html
+<form accept="#" id="form" method="POST" name="formulario">
+<span class="...">...</span>
+<input id="..." type="text" name="..." placeholder="..." required
+<select name="...">
+<option>...</option>
+```
 
 ## CSS
 As classes de alguns elementos são customizados entre:
-- `.titulo`
-- `.sub-titulo`
-- `.formulario-usuario`
-- `.campo`
-- `.controle`
-- `.botao`
-- `.sucesso` & `.erro`
+ ```css
+.formulario-usuario {...}
+.titulo {...}
+.sub-titulo {...}
+.campo {...}
+.controle {...}
+.botao {...}
+.sucesso {...}
+.erro {...^}
+```
+
+## JavaScript
+Duas funções criados entre validaCPF para validar o especificamente o CPF e validacaoDados para verificar os dados de inputs.
 
