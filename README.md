@@ -35,5 +35,5 @@ As classes de alguns elementos são customizados entre:
 - `.campo`
 - `.controle`
 - `.botao`
-- `.sucesso` & .erro`
+- `.sucesso` & `.erro`
 
