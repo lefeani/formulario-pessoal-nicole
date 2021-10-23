@@ -26,7 +26,6 @@ Uso <tag> `form` para criar o formulário e agrupar os elementos usados HTML ent
 - `input`
 - `select`
 - `option`
-'''html
 
 ```html
 <form accept="#" id="form" method="POST" name="formulario">
