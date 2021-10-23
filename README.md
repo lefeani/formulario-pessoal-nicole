@@ -51,3 +51,20 @@ As classes de alguns elementos são customizados entre:
 ## JavaScript
 Duas funções criados entre validaCPF para validar o especificamente o CPF e validacaoDados para verificar os dados de inputs.
 
+- Dentro de função validacaoDados tem duas variáveis entre valcpf para pegar o input pelo CPF e resultadoValidacao para mostrar o resultado após digitiar o núemro de CPF
+```js
+var valcpf = document.getElementById("DigitarCPF").value;
+var resultadoValidacao = validaCPF(valcpf);
+```
+
+- Essa função que valida o CPF seja especifico o CPF caso digitar o número incorreto e retorna a mensagem diz "não é válido", se for verdadeiro retorna "é válido".
+```js
+ function validaCPF(valcpf) {
+  if (valcpf.length != 11) {
+    return false;
+  } else {
+    return true;
+  }
+}
+```
+
