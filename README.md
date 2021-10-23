@@ -7,6 +7,7 @@ Desafio de forumário - Nicole
 - **Nicole Ferreira Silva**
 - **Idade:** 22 
 - **Tipo de deficiência:** Auditiva
+- [Linkedin](https://www.linkedin.com/in/nicole-ferreira-8438a4139/)
 
 ### Tecnologias
 - [x] HTML
@@ -28,7 +29,7 @@ Uso <tag> `form` para criar o formulário e agrupar os elementos usados HTML ent
 - `option`
 
 ```html
-<form accept="#" id="form" method="POST" name="formulario">
+<form accept="#">
 <span class="...">...</span>
 <input id="..." type="text" name="..." placeholder="..." required
 <select name="...">
@@ -70,7 +71,7 @@ var resultadoValidacao = validaCPF(valcpf);
 }
 ```
  
-- Variáveis criadas que tem: `nome`, `endereco`, `numero` e `celular` são usados pelo `id` em HTML e estão no `if` caso não tiver o valor e informa a mensagem "não é informado". E tem o `alert` que informa "O cadastro enviado".
+- Variáveis criadas que tem os dados como nome e outros, são usados pelo `id` em HTML e estão no `if` caso não tiver o valor e informa a mensagem "não é informado". E tem o `alert` que informa "O cadastro enviado".
 
 ```js
 const nome = document.getElementById("nome");
