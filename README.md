@@ -45,13 +45,13 @@ As classes de alguns elementos são customizados entre:
 .controle {...}
 .botao {...}
 .sucesso {...}
-.erro {...^}
+.erro {...}
 ```
 
 ## JavaScript
 Duas funções criados entre validaCPF para validar o especificamente o CPF e validacaoDados para verificar os dados de inputs.
 
-- Dentro de função validacaoDados tem duas variáveis entre valcpf para pegar o input pelo CPF e resultadoValidacao para mostrar o resultado após digitiar o núemro de CPF
+- Dentro de função validacaoDados tem duas variáveis entre valcpf para pegar o input pelo CPF e resultadoValidacao mostra o resultado após digitiar o núemro de CPF.
 ```js
 var valcpf = document.getElementById("DigitarCPF").value;
 var resultadoValidacao = validaCPF(valcpf);
