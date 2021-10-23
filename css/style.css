@@ -129,16 +129,16 @@ footer p {
   padding: 20px 0;
 }
 
-.caixa-alerta span {
+.mostrarMensagem span {
   display: block;
   padding: 4px 0;
 }
 
-.caixa-alerta .sucesso {
+.mostrarMensagem .sucesso {
   background: #26ec20;
 }
 
-.caixa-alerta .erro {
+.mostrarMensagem .erro {
   background: #f33737;
 }
 
@@ -156,7 +156,7 @@ footer p {
     width: 100%;
   }
 
-  .group {
+  .controle {
     width: 100%;
   }
 }
