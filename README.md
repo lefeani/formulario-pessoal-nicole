@@ -15,7 +15,7 @@ Desafio de forumário - Nicole
 - [x] Visual Studio Code
 
 ### Objetivo
-O formulário de cadastro foi criado em HTML, CSS e uso de JavaScript para validar o CPF e os dados como alert.
+O formulário de cadastro foi criado em HTML, CSS e uso de JavaScript para validar o CPF e os dados como `alert`.
 
 ### Descrição do site:
 
@@ -70,7 +70,7 @@ var resultadoValidacao = validaCPF(valcpf);
 }
 ```
  
-- Variáveis criadas que tem: `nome`, `endereco`, `numero` e `celular` são usados pelo `id` em HTML e estão no if caso não tiver o valor e informa a mensagem "não é informado". E tem o `alert` que informa "O cadastro enviado".
+- Variáveis criadas que tem: `nome`, `endereco`, `numero` e `celular` são usados pelo `id` em HTML e estão no `if` caso não tiver o valor e informa a mensagem "não é informado". E tem o `alert` que informa "O cadastro enviado".
 
 ```js
 const nome = document.getElementById("nome");
@@ -107,3 +107,8 @@ const celular = document.getElementById("celular");
 }
 ```
 
+## Referência:
+
+- [Formulário HTML e CSS](https://www.youtube.com/watch?v=okbByPWS1Xc&t=662s)
+- [Validador de CPF](https://xpcorp.gama.academy/aluno/playlist/243/1312)
+- [Validação de dados em JS](https://medium.com/@jezmael/como-validar-os-dados-de-um-formul%C3%A1rio-com-javascript-abdc5a5fba67)
