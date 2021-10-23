@@ -14,27 +14,18 @@
   <body>
     <main>
       <div class="titulo">Cadastre-se nova conta!</div>
-      <form accept="#">
+      <form accept="#" id="form" method="POST" name="formulario">
         <div class="formulario-usuario">
           <!-- NOME -->
           <div class="campo">
             <span class="sub-titulo">Nome completo*</span>
             <input
+              id="nome"
               type="text"
               name="nome"
               placeholder="Insira seu nome"
               required
             />
-          </div>
-
-          <!-- SEXO -->
-          <div class="campo">
-            <span class="sub-titulo" for="Sexo">Sexo</span>
-            <select>
-              <option selected disabled value="Selecione">Selecione</option>
-              <option class="campo-genero" value="feminino">F</option>
-              <option class="campo-genero" value="masculino">M</option>
-            </select>
           </div>
 
           <!-- CPF -->
@@ -70,6 +61,7 @@
           <div class="campo">
             <span class="sub-titulo">Endereço*</span>
             <input
+              id="endereco"
               type="text"
               name="endereco"
               placeholder="Insira seu endereço"
@@ -81,6 +73,7 @@
           <div class="campo">
             <span class="sub-titulo">Número*</span>
             <input
+              id="numero"
               type="text"
               name="numero"
               placeholder="Insira seu número"
@@ -93,7 +86,7 @@
             <span class="sub-titulo">Bairro</span>
             <input
               type="text"
-              name="numero"
+              name="bairro"
               placeholder="Insira seu bairro"
               required
             />
@@ -105,45 +98,11 @@
             <input type="text" name="cidade" placeholder="Insira sua cidade" />
           </div>
 
-          <!-- ESTADO -->
-          <div class="campo">
-            <span class="sub-titulo">Estado</span>
-            <select name="estado">
-              <option selected disabled value="selecione">Selecione</option>
-              <option value="AC">Acre</option>
-              <option value="AL">Alagoas</option>
-              <option value="AP">Amapá</option>
-              <option value="AM">Amazonas</option>
-              <option value="BA">Bahia</option>
-              <option value="CE">Ceará</option>
-              <option value="DF">Distrito Federal</option>
-              <option value="ES">Espírito Santo</option>
-              <option value="GO">Goiás</option>
-              <option value="MA">Maranhão</option>
-              <option value="MT">Mato Grosso</option>
-              <option value="MS">Mato Grosso do Sul</option>
-              <option value="MG">Minas Gerais</option>
-              <option value="PA">Pará</option>
-              <option value="PB">Paraíba</option>
-              <option value="PR">Paraná</option>
-              <option value="PE">Pernambuco</option>
-              <option value="PI">Piauí</option>
-              <option value="RJ">Rio de Janeiro</option>
-              <option value="RN">Rio Grande do Norte</option>
-              <option value="RS">Rio Grande do Sul</option>
-              <option value="RO">Rondônia</option>
-              <option value="RR">Roraima</option>
-              <option value="SC">Santa Catarina</option>
-              <option value="SP">São Paulo</option>
-              <option value="SE">Sergipe</option>
-              <option value="TO">Tocantins</option>
-            </select>
-          </div>
-
           <!-- CELULAR -->
           <div class="campo">
             <span class="sub-titulo">Celular*</span>
             <input
+              id="celular"
               type="text"
               name="celular"
               placeholder="(DD) XXXX-XXXX"
@@ -154,22 +113,85 @@
           <!-- TELEFONE FIXO -->
           <div class="campo">
             <span class="sub-titulo">Telefone fixo</span>
-            <input type="text" name="celular" placeholder="(DD) XXXX-XXXX" />
+            <input
+              type="text"
+              name="telefone-fixo"
+              placeholder="(DD) XXXX-XXXX"
+            />
+          </div>
+
+          <!-- ESTADO -->
+          <div class="controle">
+            <div class="campo">
+              <span class="sub-titulo">Estado</span>
+              <select name="estado">
+                <option selected disabled value="selecione">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- SEXO -->
+          <div class="controle">
+            <div class="campo">
+              <span class="sub-titulo" for="Sexo">Sexo</span>
+              <select>
+                <option selected disabled value="Selecione">Selecione</option>
+                <option class="campo-genero" value="feminino">F</option>
+                <option class="campo-genero" value="masculino">M</option>
+              </select>
+            </div>
           </div>
         </div>
 
         <div class="botao">
-          <input type="button" value="Enviar" onclick="validacaoDados()"/>
+          <input
+            id="btn"
+            type="button"
+            value="Enviar"
+            onclick="validacaoDados()"
+          />
         </div>
       </form>
+
       <div class="container">
-        <div id="sucesso" class="caixa-alerta" style="display: none;" role="alert">
+        <div
+          id="sucesso"
+          class="caixa-alerta"
+          style="display: none"
+          role="alert"
+        >
           <span class="sucesso">Seu CPF é válido</span>
         </div>
-        <div id="erro" class="caixa-alerta" style="display: none;" role="alert">
+        <div id="erro" class="caixa-alerta" style="display: none" role="alert">
           <span class="erro">Seu CPF não é válido</span>
         </div>
-
       </div>
       <span><strong>*</strong> é obrigatório</span>
     </main>
@@ -178,6 +200,6 @@
       <p>Programa de Formação Itaú Tech - 5° Edição</p>
       <p>Gama Acamdey</p>
     </footer>
-    <script src="js/validarCPF.js"></script>
+    <script src="js/valideDatas.js"></script>
   </body>
 </html>
