@@ -1,6 +1,6 @@
-<p align="center">
-# Desafio de forumário - Nicole
-</p>
+<h1 align="center">
+Desafio de forumário - Nicole
+</h1>
 
 ## Autor
 
