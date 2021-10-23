@@ -21,11 +21,10 @@ body {
   padding-top: 30px;
   background: #303952;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 main {
-  max-width: 600px;
+  max-width: 1200px;
   width: 100%;
   background: #fff;
   padding: 25px 30px;
@@ -45,13 +44,19 @@ main .titulo {
 main form .formulario-usuario {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   margin: 20px 0 12px 0;
 }
 
 form .formulario-usuario .campo {
   margin-bottom: 30px;
+}
+
+.controle {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 .formulario-usuario .campo .sub-titulo {
@@ -70,14 +75,15 @@ form .formulario-usuario .campo {
   font-size: 16px;
 }
 
-.formulario-usuario .campo select {
+.formulario-usuario select {
   height: 45px;
   width: 100%;
   outline: none;
   border-radius: 5px;
   border: 1px solid #ccc;
-  padding-left: 15px;
+  padding-left: 6px;
   font-size: 16px;
+  color: gray;
 }
 
 form .botao {
@@ -96,6 +102,7 @@ form .botao input {
   border-radius: 5px;
   letter-spacing: 1px;
   background: #303952;
+  cursor: pointer;
 }
 
 /* 
@@ -146,6 +153,10 @@ footer p {
 
   form .formulario-usuario .campo {
     margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .group {
     width: 100%;
   }
 }
