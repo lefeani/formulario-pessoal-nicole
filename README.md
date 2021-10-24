@@ -50,7 +50,7 @@ As classes de alguns elementos são customizados entre:
 ```
 
 ## JavaScript
-Duas funções criados entre **validaCPF** para validar o especificamente o CPF e **validacaoDados** para verificar os dados de inputs.
+Duas funções criadas entre **validaCPF** para validar o especificamente o CPF e **validacaoDados** para verificar os dados de inputs.
 
 - Dentro dessa função **validacaoDados** tem duas variáveis entre **valcpf** para pegar o `input` CPF e **resultadoValidacao** mostra o resultado após digitiar o número de CPF.
 
@@ -105,7 +105,6 @@ const celular = document.getElementById("celular");
     return;
   }
   alert("O cadastro enviado!");
-}
 ```
 
 ## Referência:
